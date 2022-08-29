@@ -19,6 +19,9 @@ transition: all 0.2s ease-in-out;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#fff" : "#01BF71")}
+    background: ${({ primary }) => (primary ? "#ffff" : "#01BF71")}
 }
 `;
+
+//button not showing on the main hero section when hover, it's there but...
+//background: ${({ primary }) => (primary ? "#ffff" : "#01BF71")}
