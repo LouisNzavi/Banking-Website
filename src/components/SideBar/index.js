@@ -10,18 +10,29 @@ import {
   SideBarRoute,
 } from "./SideBarElements";
 
-function index() {
+//react scroll links not routes
+
+const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SideBarContainer>
-      <Icon>
+    <SideBarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
+
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarLink to="about">About</SideBarLink>
-          <SideBarLink to="discover">Discover</SideBarLink>
-          <SideBarLink to="services">Services</SideBarLink>
-          <SideBarLink to="signup">Sign Up</SideBarLink>
+          <SideBarLink to="about" onClick={toggle}>
+            About
+          </SideBarLink>
+          <SideBarLink to="discover" onClick={toggle}>
+            Discover
+          </SideBarLink>
+          <SideBarLink to="services" onClick={toggle}>
+            Services
+          </SideBarLink>
+          <SideBarLink to="signup" onClick={toggle}>
+            Sign Up
+          </SideBarLink>
         </SideBarMenu>
         <SideBtnWrap>
           <SideBarRoute to="/">Sign In</SideBarRoute>
@@ -29,6 +40,6 @@ function index() {
       </SideBarWrapper>
     </SideBarContainer>
   );
-}
+};
 
-export default index;
+export default Sidebar;

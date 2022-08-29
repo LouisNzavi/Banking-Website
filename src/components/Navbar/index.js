@@ -12,13 +12,13 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
-function index() {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Symphony</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -42,6 +42,6 @@ function index() {
       </Nav>
     </>
   );
-}
+};
 
-export default index;
+export default Navbar;
