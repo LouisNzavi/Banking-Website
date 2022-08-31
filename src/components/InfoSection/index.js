@@ -21,6 +21,7 @@ const InfoSection = ({
   imgStart,
   topLine,
   img,
+  imgFile,
   alt,
   buttonLabel,
   darkText,
