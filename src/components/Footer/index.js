@@ -1,5 +1,11 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+  FaGoogle,
+} from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
@@ -30,34 +36,7 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
               <FooterLink to="/signin">Services</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-              <FooterLink to="/signin">Contact Us</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">Services</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-              <FooterLink to="/signin">Contact Us</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">Services</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Terms of Service</FooterLink>
-              <FooterLink to="/signin">Contact Us</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">Services</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
+              <FooterLink to="/signin">Discover</FooterLink>
               <FooterLink to="/signin">Terms of Service</FooterLink>
               <FooterLink to="/signin">Contact Us</FooterLink>
             </FooterLinkItems>
@@ -82,6 +61,9 @@ const Footer = () => {
               </SocialIconLinks>
               <SocialIconLinks href="/" target="_blank" aria-label="TikTok">
                 <FaTiktok />
+              </SocialIconLinks>
+              <SocialIconLinks href="/" target="_blank" aria-label="email">
+                <FaGoogle />
               </SocialIconLinks>
             </SocialIcons>
           </SocialMediaWrap>
