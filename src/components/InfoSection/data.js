@@ -40,7 +40,7 @@ export const homeObjThree = {
   lightText: true,
   lightTextDisc: false,
   topLine: "Social Media Strategy Services",
-  headline: "Stratgies and objectives to meet business challenges",
+  headline: "Strategies and objectives to meet business challenges",
   description:
     "Our strategy is simple! Research, develop and iterate to deliver you results. We want to understand your brand, audience and goals. Everything will be analysed and provided to you. Our goal is to meet your objective and increase your bottom line.",
   buttonLabel: "Contact Us",
