@@ -19,20 +19,20 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Reduce Expenses</ServicesH2>
+          <ServicesH2>Business Goals</ServicesH2>
           <SericesP>
-            We help reduce your fees and increase your overall revenue.
+            Increase your online brand awareness
           </SericesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Virtual Offices</ServicesH2>
-          <SericesP>Access platform anywhere in the world</SericesP>
+          <ServicesH2>Social Media Goals</ServicesH2>
+          <SericesP>Increase engagement and brand adovates on different social channels</SericesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Special Memberships</ServicesH2>
-          <SericesP>Earn cashback on your spending!</SericesP>
+          <ServicesH2>Results</ServicesH2>
+          <SericesP>An all-around understanding of your brand voice, what is and isn't working</SericesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
