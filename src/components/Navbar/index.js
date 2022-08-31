@@ -28,8 +28,9 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav);
   });
 
+  //scroll to top when clicked on whilst at bottom of page
   const toggleHome = () => {
-    scroll.scrollTotop();
+    scroll.scrollToTop();
   };
 
   return (
@@ -51,6 +52,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 exact="true"
                 offset={-80}
+                activeClass="active"
               >
                 About
               </NavLinks>
@@ -63,6 +65,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 exact="true"
                 offset={-80}
+                activeClass="active"
               >
                 Discover
               </NavLinks>
@@ -75,6 +78,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 exact="true"
                 offset={-80}
+                activeClass="active"
               >
                 Services
               </NavLinks>
