@@ -27,12 +27,12 @@ grid-gap: 16px;
 padding: 0 50px;
 
 @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 760px) {
-    grid-template-columns: 1fr
-    padding: 0 20px
+@media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
 }
 `;
 
@@ -51,7 +51,7 @@ transition: all 0.2 ease-in-out;
 &:hover {
     transform: scale(1.02);
     transition: all 0.2 ease-in-out;
-    cursor: pointer
+    cursor: pointer;
 }
 `;
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "../ButtonElements";
+
 import {
   Coloumn2,
   InfoContainer,
@@ -14,14 +16,11 @@ import {
   Subtitle,
 } from "./InfoElements";
 
-import { Button } from "../ButtonElements";
-
 const InfoSection = ({
   lightBg,
   imgStart,
   topLine,
   img,
-  imgFile,
   alt,
   buttonLabel,
   darkText,

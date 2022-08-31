@@ -21,18 +21,18 @@ const Services = () => {
           <ServicesIcon src={Icon1} />
           <ServicesH2>Business Goals</ServicesH2>
           <SericesP>
-            Increase your online brand awareness
+            Increase your online brand awareness.
           </SericesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
           <ServicesH2>Social Media Goals</ServicesH2>
-          <SericesP>Increase engagement and brand adovates on different social channels</SericesP>
+          <SericesP>Increase engagement and brand adovates on different social channels.</SericesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
           <ServicesH2>Results</ServicesH2>
-          <SericesP>An all-around understanding of your brand voice, what is and isn't working</SericesP>
+          <SericesP>An all-around understanding of your brand voice, what is and isn't working.</SericesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>

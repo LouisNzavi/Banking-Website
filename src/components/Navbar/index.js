@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
-  });
+  }, []);
 
   //scroll to top when clicked on whilst at bottom of page
   const toggleHome = () => {
