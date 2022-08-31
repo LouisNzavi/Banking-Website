@@ -15,15 +15,18 @@ top: 0
 left: 0;
 transition: 0.3s ease-in-out;
 opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 //for the drop down on the burger menu, needs to be added inside the SideBarContainer
-///* top: ${({ isOpen }) => (isOpen ? "0" : "-100%")}; */
+// opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+// top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
+//keeps it in position
 export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
@@ -40,7 +43,7 @@ export const SideBarWrapper = styled.div`
 
 export const SideBarMenu = styled.ul`
   display: grid;
-  grid-template-coloumns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
 
@@ -58,11 +61,11 @@ text-decoration: none;
 list-style: none;
 tranition: 0.2s ease-in-out;
 text-decoration: none;
-color: #fff;
+color: #fb8500;
 cursor: pointer;
 
 &:hover {
-    color: #01bf71
+    color: #fff
     transition: 0.2s ease-in-out;
 }
 `;
@@ -73,22 +76,21 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SideBarRoute = styled(LinkR)`
-border-radius: 50px;
-background: #01bf1;
-white-space: nowrap;
-padding: 16px 64px;
-color: #010606;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 01.2s ease-in-out;
-text-decoration: none
+  border-radius: 50px;
+  background: #fb8500;
+  white-space: nowrap;
+  padding: 16px 64px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 01.2s ease-in-out;
+  text-decoration: none;
 
-
-&:hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606
-}
+    color: #010606;
+  }
 `;

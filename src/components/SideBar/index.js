@@ -31,11 +31,11 @@ const Sidebar = ({ isOpen, toggle }) => {
             Services
           </SideBarLink>
           <SideBarLink to="signup" onClick={toggle}>
-            Sign Up
+            Contact Us
           </SideBarLink>
         </SideBarMenu>
         <SideBtnWrap>
-          <SideBarRoute to="/">Sign In</SideBarRoute>
+          <SideBarRoute to="signin">Contact Us</SideBarRoute>
         </SideBtnWrap>
       </SideBarWrapper>
     </SideBarContainer>

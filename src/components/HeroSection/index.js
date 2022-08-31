@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Video from "../../video/video.mp4";
-import { Button } from "../ButtonElement";
+import Video from "../../video/video-2.mp4";
+import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,
@@ -14,32 +14,34 @@ import {
 } from "./HeroElements";
 
 const HeroSection = () => {
-  const { hover, setHover } = useState(false);
+  const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
-        <HeroP>
-          Sign Up today for a new account and receive £500 in credit towards
-          your next payment.
-        </HeroP>
+        <HeroH1>Social Media Marketing Agency</HeroH1>
+        <HeroP>We are Thinkers, Designers and Strategists</HeroP>
         <HeroBtnWrapper>
           <Button
-            to="signup"
+            to="contactus"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

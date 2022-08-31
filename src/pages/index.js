@@ -3,10 +3,19 @@ import Sidebar from "../components/SideBar/index";
 import Navbar from "../components/Navbar/index";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-import { homeObjOne } from "../components/InfoSection/data";
+import {
+  homeObjOne,
+  homeObjThree,
+  homeObjTwo,
+} from "../components/InfoSection/data";
+import Services from "../components/Services";
+import Footer from "../components/Footer";
 
 function Home() {
-  const { isOpen, setIsOpen } = useState(false);
+
+  //function to toggle the sidebarmenu to open/close when clicked
+  
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -18,6 +27,10 @@ function Home() {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne} />
+      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjThree} />
+      <Services />
+      <Footer />
     </>
   );
 }
