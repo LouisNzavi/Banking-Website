@@ -12,9 +12,8 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 
 function Home() {
-
   //function to toggle the sidebarmenu to open/close when clicked
-  
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -30,7 +29,6 @@ function Home() {
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <Services />
-      <Footer />
     </>
   );
 }
