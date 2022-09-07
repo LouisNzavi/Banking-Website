@@ -50,8 +50,7 @@ const Footer = () => {
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLinks href="/" target="_blank" aria-label="Facebook">
-                {" "}
-                <FaFacebook />{" "}
+                <FaFacebook />
               </SocialIconLinks>
               <SocialIconLinks href="/" target="_blank" aria-label="Instagram">
                 <FaInstagram />

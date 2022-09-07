@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import { Link } from "react-scroll";
 
+//reusable button so as to avoid creating new buttons on every new component 
+
 export const Button = styled(Link)`
 border-radius: 50px;
 background: ${({ primary }) => (primary ? "#fb8500" : "#010606")}
