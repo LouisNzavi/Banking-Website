@@ -95,7 +95,7 @@ const Navbar = ({ toggle }) => {
                 Sign Up
               </NavLinks> */}
             </NavItem>
-            <NavBtn primary='true'>
+            <NavBtn primary="true">
               <NavBtnLink to="/signin">Contact Us</NavBtnLink>
             </NavBtn>
           </NavMenu>

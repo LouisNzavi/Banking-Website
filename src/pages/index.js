@@ -9,7 +9,6 @@ import {
   homeObjTwo,
 } from "../components/InfoSection/data";
 import Services from "../components/Services";
-import Footer from "../components/Footer";
 
 function Home() {
   //function to toggle the sidebarmenu to open/close when clicked
