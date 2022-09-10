@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 import { Link } from "react-scroll";
 
-//reusable button so as to avoid creating new buttons on every new component 
+//reusable button so as to avoid creating new buttons on every new component
 
 export const Button = styled(Link)`
 border-radius: 50px;
-background: ${({ primary }) => (primary ? "#fb8500" : "#010606")}
+background: ${({ primary }) => (primary ? "#fff" : "#010606")}
 white-space: nowrap;
 padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-color: ${({ dark }) => (dark ? "#010606" : "#fff")}
+color: ${({ dark }) => (dark ? "#fff" : "#fb8500")}
 font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
 outline: none;
 border: none;
@@ -21,7 +21,7 @@ transition: all 0.2s ease-in-out;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#fb8500" : "#fff")}
+    background: ${({ primary }) => (primary ? "#fb8500" : "#ffff")}
 }
 `;
 

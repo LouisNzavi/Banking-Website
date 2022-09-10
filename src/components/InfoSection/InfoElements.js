@@ -79,7 +79,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px:
 line-height: 24px;
-color: ${({ darkText }) => (darkText ? "#01066" : "#fff")}
+color: ${({ darkText }) => (darkText ? "#010666" : "#fff")}
 `;
 
 export const BtnWrap = styled.div`

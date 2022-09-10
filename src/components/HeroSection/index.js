@@ -29,7 +29,7 @@ const HeroSection = () => {
         <HeroH1>Social Media Marketing Agency</HeroH1>
         <HeroP>We are Thinkers, Designers and Strategists</HeroP>
         <HeroBtnWrapper>
-          <Button
+          {/* <Button
             to="contactus"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
@@ -42,7 +42,7 @@ const HeroSection = () => {
             offset={-80}
           >
             Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </Button> */}
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
@@ -50,3 +50,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+//Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
