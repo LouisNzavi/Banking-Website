@@ -8,3 +8,8 @@
 .active {
   border-bottom: 3px solid #fb8500;
 }
+
+
+.scroll {
+  scroll-behavior: smooth;
+}

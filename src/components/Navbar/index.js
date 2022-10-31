@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -33,6 +34,11 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
+  ///opens contact page into a new tab
+  const handleClick = () => {
+    window.open("https://mail.google.com/");
+  };
+
   return (
     <>
       <Nav scrollNav={scrollNav}>
@@ -45,17 +51,20 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                activeClass="active"
-              >
-                About
-              </NavLinks>
+              <Link>
+                {" "}
+                <NavLinks
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  activeClass="active"
+                >
+                  About
+                </NavLinks>
+              </Link>
             </NavItem>
             <NavItem>
               <NavLinks
@@ -83,20 +92,8 @@ const Navbar = ({ toggle }) => {
                 Services
               </NavLinks>
             </NavItem>
-            <NavItem>
-              {/* <NavLinks
-                to="signup"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Sign Up
-              </NavLinks> */}
-            </NavItem>
             <NavBtn primary="true">
-              <NavBtnLink to="/signin">Contact Us</NavBtnLink>
+              <NavBtnLink onClick={handleClick}>Contact Us</NavBtnLink>
             </NavBtn>
           </NavMenu>
         </NavbarContainer>

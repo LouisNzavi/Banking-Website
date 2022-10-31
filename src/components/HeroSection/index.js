@@ -20,6 +20,11 @@ const HeroSection = () => {
     setHover(!hover);
   };
 
+  //opens contact page into a new tab
+  const handleClick = () => {
+    window.open("https://mail.google.com/");
+  };
+
   return (
     <HeroContainer id="home">
       <HeroBg>
@@ -40,6 +45,7 @@ const HeroSection = () => {
             spy={true}
             exact="true"
             offset={-80}
+            onClick={handleClick}
           >
             Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

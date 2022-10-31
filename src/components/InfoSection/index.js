@@ -1,5 +1,6 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+// import { Button } from "../ButtonElements";
+// import { useRef } from "react";
 
 import {
   Coloumn2,
@@ -8,13 +9,19 @@ import {
   Coloumn1,
   TextWrapper,
   TopLine,
-  BtnWrap,
+  // BtnWrap,
   ImgWrap,
   Img,
   InfoRow,
   Heading,
   Subtitle,
 } from "./InfoElements";
+
+
+//
+
+//
+
 
 const InfoSection = ({
   lightBg,
@@ -40,9 +47,9 @@ const InfoSection = ({
             <Coloumn1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
+                <Heading lightText={lightText} id='discover'>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                {/* <BtnWrap>
                   <Button
                     to="home"
                     smooth={true}
@@ -56,7 +63,7 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Coloumn1>
             <Coloumn2>
