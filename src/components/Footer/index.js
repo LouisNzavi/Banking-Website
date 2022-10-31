@@ -2,7 +2,6 @@ import React from "react";
 import {
   FaFacebook,
   FaInstagram,
-  FaTiktok,
   FaTwitter,
   FaGoogle,
 } from "react-icons/fa";
@@ -57,9 +56,6 @@ const Footer = () => {
               </SocialIconLinks>
               <SocialIconLinks href="/" target="_blank" aria-label="Twitter">
                 <FaTwitter />
-              </SocialIconLinks>
-              <SocialIconLinks href="/" target="_blank" aria-label="TikTok">
-                <FaTiktok />
               </SocialIconLinks>
               <SocialIconLinks href="/" target="_blank" aria-label="email">
                 <FaGoogle />

@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "Who are we?",
   headline: "We are thinkers, designers, developers and strategists!",
   description:
-    "The only consitency we like is change, just like the space we are in. We want to collaborate with clients that share our mission and passion whilsr we increase their social media presence, engagement and in turn sales!",
+    "The only consitency we like is change, just like the space we are in. We want to collaborate with clients that share our mission and passion whilst we increase their social media presence, engagement and in turn sales!",
   buttonLabel: "Get Started",
   imgStart: true,
   img: require("../../images/svg-4.svg").default,
@@ -48,6 +48,24 @@ export const homeObjThree = {
   img: require("../../images/svg-6.svg").default,
   imgFile: "../../images/svg-6.svg",
   alt: "services",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+export const homeObjFour = {
+  id: "contact us",
+  lightBg: false,
+  lightText: true,
+  lightTextDisc: false,
+  topLine: "Email Us",
+  headline: 'Please email us for any queries or a quote of our services!',
+  description: "grajuanagency@gmail.com",
+  buttonLabel: "Contact Us",
+  imgStart: true,
+  img: require("../../images/contactus.svg").default,
+  imgFile: "../../images/contactus.svg",
+  alt: "contact us",
   dark: true,
   primary: true,
   darkText: false,

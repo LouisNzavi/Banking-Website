@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/index";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import {
+  homeObjFour,
   homeObjOne,
   homeObjThree,
   homeObjTwo,
@@ -28,6 +29,9 @@ function Home() {
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <Services />
+      <InfoSection {...homeObjFour} />
+
+      {/* <Footer /> */}
     </>
   );
 }
